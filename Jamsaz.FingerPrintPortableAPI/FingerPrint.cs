@@ -641,7 +641,8 @@ namespace Jamsaz.FingerPrintPortableAPI
                 packet.Write(bufferId);
                 packet.Write(startPageId);
                 packet.Write(numberOfPages);
-                packet.Write(packet.CalculateCheckSum());
+                packet.Write(0x01);
+                packet.Write(0x11);
                 var result = await _packageManager.SendPacket(packet);
                  if (result.Read(9) == ReturnCode.Ok)
                 {
