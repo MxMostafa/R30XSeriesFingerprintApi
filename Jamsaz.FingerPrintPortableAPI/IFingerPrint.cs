@@ -43,6 +43,8 @@ namespace Jamsaz.FingerPrintPortableAPI
         Task EmptyDataBase();
 
         Task<int> SearchFinger(byte bufferId, byte[] startPageId, byte[] numberOfPages);
+        
+        Task<string> HighSearchFinger(byte bufferId, byte[] startPageId, byte[] numberOfPages);
 
         Task Reset();
     }
