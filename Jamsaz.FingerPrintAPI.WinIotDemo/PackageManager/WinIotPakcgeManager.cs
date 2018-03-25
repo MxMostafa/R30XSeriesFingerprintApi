@@ -28,7 +28,7 @@ namespace Jamsaz.FingerPrintAPI.WinIotDemo.PackageManager
                 _packetRecived = new AutoResetEvent(false);
                 var deviceSelector = SerialDevice.GetDeviceSelector();
                 var devices = DeviceInformation.FindAllAsync(deviceSelector).AsTask().Result;
-
+فثسف
                 if (devices.Count <= 0)
                 {
                     throw new Exception("Device not found -->[WinIotPakcgeManager_Constructor]");
