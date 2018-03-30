@@ -38,7 +38,7 @@ namespace Jamsaz.FingerPrintPortableAPI
 
         Task LoadTemplateByPageId(byte bufferId, byte[] pageNumber);
 
-        Task<bool> DeleteTemplate(byte[] pageId, byte len);
+        Task<bool> DeleteTemplate(byte[] pageId, byte[] len);
 
         Task EmptyDataBase();
 
