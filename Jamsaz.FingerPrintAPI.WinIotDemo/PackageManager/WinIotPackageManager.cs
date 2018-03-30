@@ -20,7 +20,7 @@ namespace Jamsaz.FingerPrintAPI.WinIotDemo.PackageManager
         private readonly AutoResetEvent _packetRecived;
         private List<byte[]> _sequenceDataList;
 
-        public WinIotPakcgeManager()
+        public WinIotPackageManager()
         {
             try
             {
