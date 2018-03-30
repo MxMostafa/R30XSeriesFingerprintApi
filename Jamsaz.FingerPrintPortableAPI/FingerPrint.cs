@@ -526,7 +526,7 @@ namespace Jamsaz.FingerPrintPortableAPI
         /// <param name="pageId">Flash location of the template, two bytes with high byte front and low byte behind.</param>
         /// <param name="len">Number of templates to be deleted</param>
         /// <returns>Return true if the record remove successfuly</returns>
-        public async Task<bool> DeleteTemplate(byte[] pageId, byte len)
+        public async Task<bool> DeleteTemplate(byte[] pageId, byte[] len)
         {
             try
             {
