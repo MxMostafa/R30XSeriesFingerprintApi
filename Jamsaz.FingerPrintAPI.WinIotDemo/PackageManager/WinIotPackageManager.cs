@@ -10,7 +10,7 @@ using Jamsaz.FingerPrintPortableAPI.PacketManager;
 
 namespace Jamsaz.FingerPrintAPI.WinIotDemo.PackageManager
 {
-    public class WinIotPakcgeManager : IPackageManager
+    public class WinIotPackageManager : IPackageManager
     {
         private SerialDevice _serialDevice;
         private DataWriter _dataWriteObject;
