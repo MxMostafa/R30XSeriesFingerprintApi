@@ -2,8 +2,8 @@
              /////////////////////Create ///////////////////////////////////////
             var fingerPrint = new FingerPrint(new byte[] { 0xFF, 0xFF, 0xFF, 0xFF }, new WinIotPakcgeManager());
             //Verify Password   defult password is 0000   return trye or false
-            var verify = fingerPrint.VerifyPassword(new byte[] { 0x0, 0x0, 0x0, 0x0 });
-            if (! await verify) return;
+            var verify =await fingerPrint.VerifyPassword(new byte[] { 0x0, 0x0, 0x0, 0x0 });
+            if (! verify) return;
             //*****************************************************************************************************
             //Enrol
             //Scan finger While Correct Scan Break  correct scan return zero
