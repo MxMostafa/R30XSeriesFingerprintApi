@@ -1,5 +1,5 @@
 # R30XSeriesFingerprintApi
- /////////////////////Create ///////////////////////////////////////
+             /////////////////////Create ///////////////////////////////////////
             var fingerPrint = new FingerPrint(new byte[] { 0xFF, 0xFF, 0xFF, 0xFF }, new WinIotPakcgeManager());
             //Verify Password   defult password is 0000   return trye or false
             var verify = fingerPrint.VerifyPassword(new byte[] { 0x0, 0x0, 0x0, 0x0 });
@@ -14,7 +14,7 @@
                     break;
             }
             //After convert scanned image to data for store  with Generate to tz
-            //To generate character file from the original finger image in ImageBuffer and store the file in CharBuffer1(0x1) or CharBuffer2(0x2)
+            //To generate character file from the original finger image in ImageBuffer and store the file in CharBuffer1(0x1) or                     CharBuffer2(0x2)
             await fingerPrint.GenerateImageToTz(0x1);
             var pageNumber = 1; //integer and 4 byte
             //page ID 1 - 1001 for r305
